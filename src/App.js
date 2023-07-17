@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+// following imports are for cylinder threejs
+// npm start pour lancer l'app react
+import { Canvas } from "@react-three/fiber";
+import Cylinder3d from "./component/Cylinder3d";
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>PROJECT 3D</h1>
+        <div className='App-header-right'>
+          <h3>Product</h3>
+          <h3>Investments</h3>
+          <h3>Account</h3>
+        </div>
       </header>
-      aled
+
+
+
+
+      <div className="App-3DModel">
+        <Canvas>
+          <pointLight position={[10, 10, 10]} />
+          <ambientLight />
+          <Cylinder3d position={[-1.2, 0, 0]} />
+          <Cylinder3d position={[1.2, 0, 0]} />
+        </Canvas>
+      </div>
+
+
+
+
+
+
     </div>
   );
 }
