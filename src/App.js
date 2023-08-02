@@ -9,11 +9,13 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <h1>PROJECT 3D</h1>
+        <div className='App-header-left'>
+          <h1>PROJECT 3D</h1>
+        </div>
         <div className='App-header-right'>
+          <h3>Account</h3>
           <h3>Product</h3>
           <h3>Investments</h3>
-          <h3>Account</h3>
         </div>
       </header>
 
