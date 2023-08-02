@@ -14,7 +14,6 @@ function App() {
           <h3>Product</h3>
           <h3>Investments</h3>
           <h3>Account</h3>
-          <img src='./public/Johan_Liebert.png'></img>
         </div>
       </header>
 
