@@ -16,7 +16,7 @@ function App() {
           <h3>Account</h3>
           <h3>Product</h3>
           <h3>Investments</h3>
-          <img src='https://6r-code.github.io/host/public/image.png' alt='Image'></img>
+          <img src='image.png' alt='Image'></img>
         </div>
       </header>
 
