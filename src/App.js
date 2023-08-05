@@ -3,6 +3,7 @@ import './App.css';
 // npm start pour lancer l'app react
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
+import image from "./image.png";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <h3>Product</h3>
           <h3>Investments</h3>
           <img src='src/image.png' alt='Image'></img>
+          <image/>
         </div>
       </header>
 
