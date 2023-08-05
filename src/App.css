@@ -38,6 +38,12 @@
     }
 }
 
+.App-header-logo {
+  width: 20px;
+  height: 20px;
+}
+
+
 .App-3DModel {
   display: flex;
   flex-direction: row;
