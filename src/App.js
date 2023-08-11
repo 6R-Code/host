@@ -1,8 +1,8 @@
 import './App.css';
-// following imports are for cylinder threejs
-// npm start pour lancer l'app react
+import {useRef, useState} from 'react'
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
+import {OrbitControls, useGLTF} from '@react-three/drei'
 
 function App() {
   return (
@@ -31,8 +31,6 @@ function App() {
           <Cylinder3d position={[1.2, 0, 0]} />
         </Canvas>
       </div>
-
-
 
 
 
