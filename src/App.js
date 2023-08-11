@@ -1,6 +1,12 @@
 import './App.css';
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
+import Model from './component/Scene';
+
+import { useLoader } from '@react-three/fiber'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { Suspense } from 'react'
+import { Environment } from '@react-three/drei'
 
 
 function App() {
@@ -32,7 +38,12 @@ function App() {
       </div>
 
 
-
+      <Canvas>
+        <Suspense fallback={null}>
+          <Model />
+          <Environment preset="sunset" background />
+        </Suspense>
+      </Canvas>
 
 
 
