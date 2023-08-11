@@ -1,20 +1,11 @@
 import './App.css';
-import {Suspense, useRef, useState} from 'react'
+import {useRef, useState} from 'react'
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
 import {OrbitControls, useGLTF} from '@react-three/drei'
 
-function Model(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
-  return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_2.geometry} material={materials.Default_OBJ} rotation={[-Math.PI / 2, 0, 0]} />
-    </group>
-  )
-}
 
 function App() {
-  const ref=useRef()
   return (
     <div className="App">
 
