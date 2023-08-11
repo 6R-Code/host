@@ -1,8 +1,9 @@
 import './App.css';
-import {useRef, useState} from 'react'
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
 import {OrbitControls, useGLTF} from '@react-three/drei'
+import { Suspense } from 'react';
+import { Scene } from './component/Scene';
 
 
 function App() {
@@ -36,8 +37,11 @@ function App() {
 
       <div className='App-Panel'>
         <Canvas>
-            <ambientLight />
-
+          <ambientLight />
+          <OrbitControls />
+          <Suspense fallback={null}>
+            <Scene/>
+          </Suspense>
         </Canvas>
       </div>
 
