@@ -1,16 +1,16 @@
 import './App.css';
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from "./component/Cylinder3d";
-import Model from './component/Scene';
 
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+import Model from './component/Scene';
 import { Suspense } from 'react'
 import { Environment } from '@react-three/drei'
 
 
 function App() {
   return (
+  
     <div className="App">
 
       <header className="App-header">

@@ -10,7 +10,7 @@ Title: New Life Fellowship Terracotta Panel #2
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF('/scene.gltf')
   return (
     <group {...props} dispose={null}>
@@ -28,4 +28,3 @@ export function Model(props) {
 }
 
 useGLTF.preload('/scene.gltf')
-export default Model;
