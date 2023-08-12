@@ -5,7 +5,7 @@ import Cylinder3d from "./component/Cylinder3d";
 
 import Model from './component/Scene';
 import { Suspense } from 'react'
-import { Environment } from '@react-three/drei'
+import { Environment, OrbitControls } from '@react-three/drei'
 
 
 function App() {
@@ -42,6 +42,7 @@ function App() {
         <Suspense fallback={null}>
           <Model />
           <Environment preset="sunset" background />
+          <OrbitControls />
         </Suspense>
       </Canvas>
 
