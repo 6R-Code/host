@@ -37,13 +37,15 @@ function App() {
         </Canvas>
       </div>
 
+      <div className='App-second-3Dmodel'>
+        <Canvas>
+          <Suspense fallback={null}>
+            <Model />
+            <OrbitControls />
+          </Suspense>
+        </Canvas>
+      </div>
 
-      <Canvas>
-        <Suspense fallback={null}>
-          <Model />
-          <OrbitControls />
-        </Suspense>
-      </Canvas>
 
 
 
