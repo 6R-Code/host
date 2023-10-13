@@ -41,7 +41,6 @@ function App() {
       <Canvas>
         <Suspense fallback={null}>
           <Model />
-          <Environment background />
           <OrbitControls />
         </Suspense>
       </Canvas>
