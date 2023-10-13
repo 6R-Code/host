@@ -5,7 +5,7 @@ import Cylinder3d from "./component/Cylinder3d";
 
 import Model from './component/Scene';
 import { Suspense } from 'react'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 
 
 function App() {
