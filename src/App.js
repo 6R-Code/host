@@ -41,7 +41,7 @@ function App() {
       <Canvas>
         <Suspense fallback={null}>
           <Model />
-          <Environment preset="sunset" background />
+          <Environment background />
           <OrbitControls />
         </Suspense>
       </Canvas>
