@@ -14,8 +14,8 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('./scene.gltf')
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0, -30]} rotation={[-Math.PI, 0, 0]}>
-        <group position={[0, 0, 0]}>
+      <group position={[0, -5.083, -30]} rotation={[-Math.PI, 0, 0]}>
+        <group position={[-19.003, -15.152, -1.409]}>
           <mesh geometry={nodes.Object_2.geometry} material={materials.Material_0} />
           <mesh geometry={nodes.Object_3.geometry} material={materials.Material_0} />
           <mesh geometry={nodes.Object_4.geometry} material={materials.Material_0} />
