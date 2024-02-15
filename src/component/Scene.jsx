@@ -7,7 +7,6 @@ Source: https://sketchfab.com/3d-models/new-life-fellowship-terracotta-panel-2-e
 Title: New Life Fellowship Terracotta Panel #2
 */
 
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
