@@ -20,7 +20,7 @@ function App() {
         </div>
         <div className='App-header-right'>
           <h3>Account</h3>
-          <h3>Product</h3>
+          <h3>Products</h3>
           <h3>Investments</h3>
           <img src='./image.png' alt='Image'className='App-header-logo'></img>
         </div>
