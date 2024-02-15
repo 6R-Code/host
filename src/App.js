@@ -1,11 +1,12 @@
 import './App.css';
-import { Canvas } from "@react-three/fiber";
+
 import Cylinder3d from "./component/Cylinder3d";
 
-
-import Model from './component/Scene';
+import { Canvas } from "@react-three/fiber";
 import { Suspense } from 'react'
 import { OrbitControls } from '@react-three/drei'
+import Model from './component/Scene';
+
 
 
 function App() {
